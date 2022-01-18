@@ -9,6 +9,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
+      - name: find pip
+        run: |
+          which pip
       - name: Run pre-commit
         run: |
           pre-commit run --all-files
