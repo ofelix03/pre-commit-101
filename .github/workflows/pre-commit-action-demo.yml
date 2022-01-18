@@ -1,7 +1,7 @@
-name: GitHub Actions Demo
+name: Precommit-Action-Demo
 on: [push]
 jobs:
-  Precommit-Action-Demo:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
